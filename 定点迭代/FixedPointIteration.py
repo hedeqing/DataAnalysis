@@ -21,7 +21,7 @@ def calculate():
     while True :
         index+=1
         print("epoch:"+str(index)+"  x_temp ="+str(x_temp)+"  "+" loss = "+str(x_temp-fun(x_temp)))
-        if x_temp == fun2(x_temp):
+        if x_temp == fun(x_temp):
             return x_temp
         x_temp = fun(x_temp)
 if __name__ == "__main__":
